@@ -1,0 +1,79 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100vw;
+}
+
+.theme {
+  --one: #ffffff;
+  --two: #8F945C;
+  --three: #4D698B;
+  --four: #D1C8B5;
+  --five: #3D4756;
+  --six: #545454;
+  --seven: #9A9280; /* hover */
+}
+
+h1 {
+  font-family: 'Quicksand';
+}
+
+/* HEADER */
+
+.header {
+  height: 6rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: auto;
+  background-color: var(--five);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  z-index: 30;
+}
+
+.logo {
+  background-image: url("sf-events-logo.svg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+  height: 20vw;
+  width: 20vw;
+  margin-top: -.7rem;
+  z-index: 40;
+  padding: 0;
+
+}
+
+nav {
+  align-self: center;
+  font-family: 'Advent Pro';
+  letter-spacing: .5rem;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  padding: 2rem;
+}
+
+li {
+  display: inline;
+  padding: 1rem;
+}
+
+li a {
+  color: var(--one);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: var(--four);
+  font-weight: bolder;
+}
